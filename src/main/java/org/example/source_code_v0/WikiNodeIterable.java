@@ -58,6 +58,7 @@ public class WikiNodeIterable implements Iterable<Node> {
 
         @Override
         public boolean hasNext() {
+
             return !stack.isEmpty();
         }
 

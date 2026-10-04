@@ -58,6 +58,7 @@ public class WikiFetcher {
         Document doc = Jsoup.parse(stream, "UTF-8", filename);
 
         // parse the contents of the file
+        // TODO: factor out the following repeated code
         Element content = doc.getElementById("mw-content-text");
         Elements paras = content.select("p");
         return paras;

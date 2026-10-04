@@ -22,7 +22,7 @@ public class WikiParserTest {
     public void testFindFirstLink1() throws IOException {
         String url = "https://en.wikipedia.org/wiki/Java_(programming_language)";
         String href = findFirstLink(url);
-        assertThat(href, is("/wiki/Programming_language"));
+        assertThat(href, is("/en.wikipedia.org/wiki2/Programming_language"));
     }
 
     /**
@@ -33,7 +33,7 @@ public class WikiParserTest {
     public void testFindFirstLink2() throws IOException {
         String url = "https://en.wikipedia.org/wiki/Mathematics";
         String href = findFirstLink(url);
-        assertThat(href, is("/wiki/Quantity"));
+        assertThat(href, is("/en.wikipedia.org/wiki2/Quantity"));
     }
 
     /**

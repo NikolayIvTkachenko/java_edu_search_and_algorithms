@@ -77,9 +77,6 @@ public class WikiParser {
 
     /**
      * Returns the element if it is a valid link, null otherwise.
-     *
-     *
-     *
      * @param elt
      */
     private Element processElement(Element elt) {
@@ -115,7 +112,7 @@ public class WikiParser {
             return false;
         }
         // a Wikipedia help page
-        if (startsWith(elt, "/wiki/Help:")) {
+        if (startsWith(elt, "/en.wikipedia.org/wiki2/Help:")) {
             return false;
         }
         // TODO: there are a couple of other "rules" we haven't handled
@@ -184,5 +181,4 @@ public class WikiParser {
             }
         }
     }
-
 }

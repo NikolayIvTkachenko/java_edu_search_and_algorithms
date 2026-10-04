@@ -21,7 +21,6 @@ public class JedisMaker {
         String slash = File.separator;
         String filename = "resources" + slash + "redis_url.txt";
         URL fileURL = JedisMaker.class.getClassLoader().getResource(filename);
-        assert fileURL != null;
         String filepath = URLDecoder.decode(fileURL.getFile(), StandardCharsets.UTF_8);
 
         // open the file
